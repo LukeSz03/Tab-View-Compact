@@ -1,0 +1,27 @@
+.window {
+  background-color: #ffffff;
+  padding: 10px;
+  border-radius: 15px;
+  overflow-y: auto;
+  min-height: 50px;
+  box-sizing: border-box;
+}
+
+.window-title {
+  font-weight: bold;
+  height: 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.flip {
+  transform: scaleY(-1);
+}
+
