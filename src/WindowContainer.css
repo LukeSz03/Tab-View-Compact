@@ -1,15 +1,20 @@
 .window {
   background-color: #ffffff;
-  padding: 10px;
+  padding: 6px;
   border-radius: 15px;
   overflow-y: auto;
   min-height: 50px;
   box-sizing: border-box;
+  box-shadow: rgba(101, 103, 104, 0.4) 0px 1px 4px -1px, rgba(65, 67, 68, 0.22) 0px 1px 2px 0px;
 }
 
 .window-title {
   font-weight: bold;
   height: 30px;
+  padding-left: 8px;
+  padding-right: 8px;
+  padding-bottom: 5px;
+  padding-top: 2px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -19,6 +24,8 @@
 .tabs {
   display: flex;
   flex-direction: column;
+  background-color: #f6f5fa;
+  border-radius: 12px;
 }
 
 .flip {

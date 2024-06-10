@@ -1,14 +1,13 @@
 import React from 'react';
 import './WindowContainer.css';
 import collapse from './assets/collapse.svg';
+import Tab from './Tab';
 
-const WindowContainer = () => {
+const WindowContainer = ({window}) => {
   const [isCollapsed, setIsCollapsed] = React.useState(false);
-
   const title = "Window 1";
-  const tabs = ['Tab1', 'Tab2', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3', 'Tab3']; // Example tabs
+  const tabs = window.tabs || [];
   const tabCount = tabs.length;
-
   const handleTitleClick = () => {
     setIsCollapsed(!isCollapsed);
   };
@@ -36,7 +35,7 @@ const WindowContainer = () => {
         </div>
         <div className='tabs' style={{ display: isCollapsed ? 'none' : 'flex' }}>
             {tabs.map((tab, index) => (
-            <div key={index}>{tab}</div>
+              <Tab key={index} tab={tab}></Tab>
             ))}
         </div>
     </div>

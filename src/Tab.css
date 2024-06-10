@@ -1,0 +1,43 @@
+.tab {
+    display: flex;
+    height: 50px;
+    padding: 8px;
+    align-items: center;
+    cursor: pointer;
+    box-sizing: border-box;
+    font-family: system-ui;
+    font-weight: 500;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-wrap: nowrap;
+}
+
+span.text {
+  width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.tab:hover {
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #2e2e2e;
+    color: white;
+    cursor: grab;
+}
+
+.icon-container {
+    display: flex;
+    align-items: center;
+    margin-left:4px;
+    margin-right: 16px;
+    position: relative;
+    background-color: white;
+  }
+  
+  .icons {
+    width: 22px;
+    margin: auto;
+    height: 22px;
+  }
+  
